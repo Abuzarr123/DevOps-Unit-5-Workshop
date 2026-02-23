@@ -2,17 +2,9 @@
 
 > Before we start, remember that "Azure DevOps" is a product: despite the name, it shouldn't be seen as a silver bullet and is neither sufficient nor necessary for "doing DevOps", even in Azure!
 
-### Step 1 - Set Up Azure DevOps
+### Step 1 - Access Azure DevOps
 
-To start, we'll set up an Azure DevOps (ADO) workspace within a Pluralsight cloud sandbox to explore this exercise.
-
-Visit [the Cloud Sandboxes page in Pluralsight](https://app.pluralsight.com/hands-on/playground/cloud-sandboxes) now, and start an Azure Sandbox. Open that as guided, noting the instructions to open the Azure portal in an incognito browser to avoid contamination with any existing Microsoft accounts!
-
-To create that ADO workspace:
-* Search for `Azure DevOps Organizations` in the search bar from the https://portal.azure.com homepage and select "My Azure DevOps Organizations" or jump directly to <https://aex.dev.azure.com/>
-* Provide any necessary details, and then create a new Organization
-* Within that Organization, create a Private Project
-* That's it, you now have an Azure DevOps project set up ready to start working!
+Ahead of the workshop you should have received an email with Azure account details and an access link to an ADO organization. After clicking that link create a private project and you're ready to go!
 
 ### Step 2 - Explore Azure DevOps
 
@@ -126,9 +118,9 @@ Make a note of the value - if you lose this it can't be recovered, although we c
 
 Your organisation url can be found by visiting the ADO organisation page and should look something like
 ```
-https://dev.azure.com/<ENCODED USERNAME>
+https://dev.azure.com/<ORGANISATION NAME>
 ```
- e.g. https://dev.azure.com/clouduserblahblah11 
+ e.g. https://dev.azure.com/JonSmi240226
 
 With those values at hand, [return to the Azure Portal](https://portal.azure.com) and search for "Deploy a Custom Template".
 
