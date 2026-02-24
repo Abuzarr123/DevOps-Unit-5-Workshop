@@ -3,14 +3,23 @@ on: [push]                      # Will make the workflow run every time you push
 
 jobs:
   build:
-    name: Build and test
+    name: Build and test chsarp
     runs-on: ubuntu-latest      # Sets the build environment a machine with the latest Ubuntu installed
     steps:
     - uses: actions/checkout@v4 # Adds a step to checkout the repository code
 
     - name: Build .NET project
       run: dotnet build
+  
+    - name : run Tests in parent folder 
+      run: dotnet test
 
+  build:
+    name: Build and test typescript
+    runs-on: ubuntu-latest      # Sets the build environment a machine with the latest Ubuntu installed
+    steps:
+    - uses: actions/checkout@v4 # Adds a step to checkout the repository code
+    
     - name: install NPM related depedencies
       working-directory: DotnetTemplate.Web 
       run: npm install
@@ -18,9 +27,6 @@ jobs:
     - name: Build Web DotnetTemplate
       working-directory: DotnetTemplate.Web 
       run: npm run build 
-
-    - name : run Tests in parent folder 
-      run: dotnet test
 
     - name: Run NPM related tests
       working-directory: DotnetTemplate.Web 
