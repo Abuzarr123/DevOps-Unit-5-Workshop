@@ -2,7 +2,7 @@ name: Continuous Integration
 on: [push]                      # Will make the workflow run every time you push to any branch
 
 jobs:
-  build and test chsarp:
+  build-and-test-chsarp:
     name: Build-and-test-chsarp
     runs-on: ubuntu-latest      # Sets the build environment a machine with the latest Ubuntu installed
     steps:
@@ -14,7 +14,7 @@ jobs:
     - name : run Tests in parent folder 
       run: dotnet test
 
-  build and test typescript:
+  build-and-test-typescript:
     name: Build-and-test-typescript
     runs-on: ubuntu-latest      # Sets the build environment a machine with the latest Ubuntu installed
     steps:
