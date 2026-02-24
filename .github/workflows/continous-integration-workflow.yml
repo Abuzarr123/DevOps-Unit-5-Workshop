@@ -28,7 +28,7 @@ jobs:
 
     - name: Run Lint checks 
       working-directory: DotnetTemplate.Web 
-      run: npm run Lint
+      run: npm run lint
 
 
     
