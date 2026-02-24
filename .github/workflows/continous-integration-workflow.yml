@@ -14,3 +14,23 @@ jobs:
     - name: install NPM related depedencies
       working-directory: DotnetTemplate.Web 
       run: npm install
+
+    - name: Build Web DotnetTemplate
+      working-directory: DotnetTemplate.Web 
+      run: npm run build 
+
+    - name : run Tests in parent folder 
+      run: dotnent test
+
+    - name: Run NPM related tests
+      working-directory: DotnetTemplate.Web 
+      run: npm t
+
+    - name: Run Lint checks 
+      working-directory: DotnetTemplate.Web 
+      run: npm run Lint
+
+
+    
+
+    
