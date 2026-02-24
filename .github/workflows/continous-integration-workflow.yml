@@ -3,7 +3,7 @@ on: [push]                      # Will make the workflow run every time you push
 
 jobs:
   build and test chsarp:
-    name: Build and test chsarp
+    name: Build-and-test-chsarp
     runs-on: ubuntu-latest      # Sets the build environment a machine with the latest Ubuntu installed
     steps:
     - uses: actions/checkout@v4 # Adds a step to checkout the repository code
@@ -13,9 +13,9 @@ jobs:
   
     - name : run Tests in parent folder 
       run: dotnet test
-      
+
   build and test typescript:
-    name: Build and test typescript
+    name: Build-and-test-typescript
     runs-on: ubuntu-latest      # Sets the build environment a machine with the latest Ubuntu installed
     steps:
     - uses: actions/checkout@v4 # Adds a step to checkout the repository code
