@@ -14,12 +14,11 @@ jobs:
     - name : run Tests in parent folder 
       run: dotnet test
 
-  build:
     name: Build and test typescript
     runs-on: ubuntu-latest      # Sets the build environment a machine with the latest Ubuntu installed
     steps:
     - uses: actions/checkout@v4 # Adds a step to checkout the repository code
-    
+
     - name: install NPM related depedencies
       working-directory: DotnetTemplate.Web 
       run: npm install
