@@ -45,6 +45,9 @@ jobs:
     - name: Success notification
       if: needs.build-and-test-csharp.result == 'success' && needs.build-and-test-typescript.result == 'success'
       uses: slackapi/slack-github-action@v1
+      with: 
+        webhook: ${{ secrets.SLACK_CHANNEL }}
+        payload={"text": "Build succeeded"}
 
     
 
