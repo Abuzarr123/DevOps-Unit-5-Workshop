@@ -10,3 +10,7 @@ jobs:
 
     - name: Build .NET project
       run: dotnet build
+
+    - name: install NPM related depedencies
+      working-directory: DotnetTemplate.Web 
+      run: npm install
