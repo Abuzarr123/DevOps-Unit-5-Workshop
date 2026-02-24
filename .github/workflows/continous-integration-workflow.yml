@@ -47,7 +47,7 @@ jobs:
       uses: slackapi/slack-github-action@v1
       with: 
         webhook: ${{ secrets.SLACK_CHANNEL }}
-        payload={"text": "Build succeeded"}
+        payload: {"text": "Build succeeded"}
 
     
 
