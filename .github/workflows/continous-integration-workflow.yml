@@ -20,7 +20,7 @@ jobs:
       run: npm run build 
 
     - name : run Tests in parent folder 
-      run: dotnent test
+      run: dotnet test
 
     - name: Run NPM related tests
       working-directory: DotnetTemplate.Web 
